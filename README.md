@@ -2,6 +2,10 @@
 
 This project demonstrates the implementation of a Flutter application using the CleanForge mason brick. It showcases a robust, scalable architecture following Clean Architecture principles with GetX state management.
 
+## Important Links
+* Github Repo: https://github.com/SHREYANSHSK/cleanforge_bricks
+* Detail Documentation: https://shreyanshsk.github.io/CleanForge-bricks/
+
 ## Project Overview
 
 This example project serves as a reference implementation for the CleanForge mason brick, demonstrating best practices in Flutter application development with a focus on maintainability, scalability, and clean code.

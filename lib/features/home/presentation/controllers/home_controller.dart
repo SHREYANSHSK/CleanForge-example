@@ -1,8 +1,8 @@
 import 'package:example/common/core/utils/errors/exceptions.dart';
-import 'package:example/features/home/domain/usecases/logout_useCase.dart';
+import 'package:example/features/home/domain/usecases/logout_usecase.dart';
 import 'package:example/routes/app_routes.dart';
 import 'package:get/get.dart';
-import 'package:example/features/home/domain/usecases/userData_usecase.dart';
+import 'package:example/features/home/domain/usecases/userdata_usecase.dart';
 import 'package:example/features/home/presentation/states/home_state.dart';
 import 'package:example/common/core/utils/logger/app_logger.dart';
 import 'package:toastification/toastification.dart';

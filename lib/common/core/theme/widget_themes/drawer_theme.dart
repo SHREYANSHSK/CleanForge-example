@@ -12,10 +12,10 @@ class RDrawerTheme {
     scrimColor: AppColors.black3,
   );
 
-  static DrawerThemeData darkDrawerTheme = DrawerThemeData(
+  static DrawerThemeData darkDrawerTheme = const DrawerThemeData(
     elevation: 2,
     backgroundColor: AppColors.black6,
     surfaceTintColor: AppColors.primary,
-    scrimColor: AppColors.black.withOpacity(0.7),
+    scrimColor: AppColors.black,
   );
 }

@@ -6,7 +6,6 @@ import 'package:get/get.dart';
 import 'package:example/features/register/presentation/controllers/register_controller.dart';
 import 'package:example/common/resources/app_resources/app_colors.dart';
 import 'package:example/common/resources/app_resources/app_sizes.dart';
-import 'package:example/common/core/utils/helpers/helpers.dart';
 
 class RegisterWidget extends GetView<RegisterController> {
   const RegisterWidget({super.key});
@@ -53,42 +52,42 @@ class RegisterWidget extends GetView<RegisterController> {
 
             // Register Button
             Obx(() => ElevatedButton(
-              onPressed: controller.state.isLoading.value
-                  ? null
-                  : controller.registerUser,
-              child: controller.state.isLoading.value
-                  ? SizedBox(
-                height: AppSizes.h20,
-                width: AppSizes.w20,
-                child: const CircularProgressIndicator(
-                  strokeWidth: 2,
-                  valueColor: AlwaysStoppedAnimation<Color>(
-                    AppColors.white,
-                  ),
-                ),
-              )
-                  : const Text(
-                'Register',
-              ),
-            )),
+                  onPressed: controller.state.isLoading.value
+                      ? null
+                      : controller.registerUser,
+                  child: controller.state.isLoading.value
+                      ? SizedBox(
+                          height: AppSizes.h20,
+                          width: AppSizes.w20,
+                          child: const CircularProgressIndicator(
+                            strokeWidth: 2,
+                            valueColor: AlwaysStoppedAnimation<Color>(
+                              AppColors.white,
+                            ),
+                          ),
+                        )
+                      : const Text(
+                          'Register',
+                        ),
+                )),
 
             // login button
             ElevatedButton(
               onPressed: () => Get.toNamed(AppRoutes.login),
               child: controller.state.isLoading.value
                   ? SizedBox(
-                height: AppSizes.h20,
-                width: AppSizes.w20,
-                child: const CircularProgressIndicator(
-                  strokeWidth: 2,
-                  valueColor: AlwaysStoppedAnimation<Color>(
-                    AppColors.white,
-                  ),
-                ),
-              )
+                      height: AppSizes.h20,
+                      width: AppSizes.w20,
+                      child: const CircularProgressIndicator(
+                        strokeWidth: 2,
+                        valueColor: AlwaysStoppedAnimation<Color>(
+                          AppColors.white,
+                        ),
+                      ),
+                    )
                   : const Text(
-                'Login',
-              ),
+                      'Login',
+                    ),
             )
           ],
         ),

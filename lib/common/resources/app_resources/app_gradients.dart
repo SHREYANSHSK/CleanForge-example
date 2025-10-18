@@ -17,7 +17,5 @@ class AppGradients {
       AppColors.black,
     ],
   );
-  static const tealDarkTealGradient = LinearGradient(
-    colors: [AppColors.teal, AppColors.darkTeal86],
-  );
+
 }
